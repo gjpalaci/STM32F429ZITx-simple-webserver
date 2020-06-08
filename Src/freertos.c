@@ -63,7 +63,7 @@ static StackType_t xIdleStack[configMINIMAL_STACK_SIZE];
 void vApplicationGetIdleTaskMemory( StaticTask_t **ppxIdleTaskTCBBuffer, StackType_t **ppxIdleTaskStackBuffer, uint32_t *pulIdleTaskStackSize )
 {
   *ppxIdleTaskTCBBuffer = &xIdleTaskTCBBuffer;	//comentario distinto
-  *ppxIdleTaskStackBuffer = &xIdleStack[0];	//con ssh
+  *ppxIdleTaskStackBuffer = &xIdleStack[0];	//con ssh y con password
   *pulIdleTaskStackSize = configMINIMAL_STACK_SIZE;	//Prueba!! modificado
   /* place for user code */
 }                   
